@@ -44,33 +44,28 @@ const CountDown = () => {
     };
   }, [countDownDate]);
 
-  const TimeUnit = ({ id, value, unit }: any) => (
-    <div className='flex flex-col items-center justify-center text-center'>
-      <span
-        className='font-semibold max-md:text-6xl max-sm:text-4xl md:text-5xl'
+  const TimeCircle = ({ id, unit, value }: any) => (
+    <li>
+      <div
+        className='flex h-16 w-16 items-center justify-center rounded-full border-4 border-dotted border-gray-700 bg-gradient-to-b from-neutral-200 to-neutral-600 bg-clip-text text-center text-2xl font-bold text-transparent lg:h-24 lg:w-24 lg:text-4xl'
         id={id}
       >
         {value}
-      </span>
-      <span>{unit}</span>
-    </div>
-  );
-
-  const TimeSeparator = () => (
-    <div className='separator max-md:text-6xl max-sm:text-4xl md:text-5xl'>
-      :
-    </div>
+      </div>
+      <p className='mt-2 bg-gradient-to-b from-neutral-200 to-neutral-300 bg-clip-text text-center text-xs text-transparent'>
+        {unit}
+      </p>
+    </li>
   );
 
   return (
-    <div className='flex cursor-default items-center justify-center space-x-2 text-white shadow-2xl'>
-      <TimeUnit id='days' value={days} unit='Days' />
-      <TimeSeparator />
-      <TimeUnit id='hours' value={hours} unit='Hours' />
-      <TimeSeparator />
-      <TimeUnit id='minutes' value={minutes} unit='Minutes' />
-      <TimeSeparator />
-      <TimeUnit id='seconds' value={seconds} unit='Seconds' />
+    <div className='flex cursor-default items-center justify-center shadow-2xl'>
+      <ul className='mx-auto flex w-full place-content-center gap-5 text-gray-50 md:place-content-end'>
+        <TimeCircle id='cdD' unit='Days' value={days} />
+        <TimeCircle id='cdH' unit='Hours' value={hours} />
+        <TimeCircle id='cdM' unit='Minutes' value={minutes} />
+        <TimeCircle id='cdS' unit='Seconds' value={seconds} />
+      </ul>
     </div>
   );
 };
