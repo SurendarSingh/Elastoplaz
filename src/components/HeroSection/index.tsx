@@ -5,7 +5,7 @@ import CountDown from './CountDown';
 
 export function HeroSection() {
   return (
-    <div className='relative flex min-h-screen w-full cursor-default flex-col items-center justify-center overflow-hidden bg-neutral-900 antialiased md:items-center md:justify-center'>
+    <div className='relative flex min-h-screen w-full cursor-default flex-col items-center justify-center overflow-hidden bg-neutral-950 antialiased md:items-center md:justify-center'>
       <BackgroundBeams />
       <HeroText />
       <div className='mx-auto mb-10 max-w-4xl p-4'>
