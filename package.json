@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "engines": {
-    "node": "18.x",
+    "node": ">=18.0.0",
     "npm": ">=10.0.0",
     "yarn": "please-use-npm"
   },
@@ -25,11 +25,13 @@
     ]
   },
   "dependencies": {
+    "@tabler/icons-react": "^2.47.0",
     "@tsparticles/engine": "^3.2.1",
     "@tsparticles/react": "^3.0.0",
     "@tsparticles/slim": "^3.2.1",
     "clsx": "^2.1.0",
     "framer-motion": "^11.0.5",
+    "mini-svg-data-uri": "^1.4.4",
     "next": "14.1.0",
     "react": "^18",
     "react-dom": "^18",
