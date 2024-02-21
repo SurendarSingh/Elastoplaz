@@ -31,16 +31,8 @@ export const StickyScroll = ({
     });
   });
 
-  const backgroundColors = [
-    'var(--black)',
-    'var(--neutral-900)',
-    'var(--slate-900)',
-  ];
   return (
     <motion.div
-      animate={{
-        backgroundColor: backgroundColors[activeCard % backgroundColors.length],
-      }}
       className='no-scrollbar relative flex h-[30rem] justify-center space-x-10 overflow-y-auto p-10'
       ref={ref}
     >
