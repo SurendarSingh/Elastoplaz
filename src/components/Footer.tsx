@@ -2,8 +2,8 @@ import React from 'react';
 
 const Footer = () => {
   return (
-    <footer className='bg-black px-16 pb-5'>
-      <hr className='mb-5 border-gray-700' />
+    <footer className='bg-black px-8 pb-5 md:px-24'>
+      <hr className='mb-5 border border-slate-600' />
       <div className='text-center sm:flex sm:flex-row sm:items-center sm:justify-between'>
         <p className='text-sm text-gray-400 sm:order-1'>
           <a href='' target='_blank' className='mx-1 hover:underline'>
