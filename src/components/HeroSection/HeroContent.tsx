@@ -1,9 +1,13 @@
+import React from 'react';
+import CountDown from './CountDown';
+import { BackgroundBeams } from './BackgroundBeam';
+
 // const textGif = 'https://media.giphy.com/media/RPTEEalCYvKr1dXQbO/giphy.gif';
 // const textGif = 'https://media.giphy.com/media/xT9DPFHl7YFmBjsVTq/giphy.gif';
 // const textGif = 'https://media.giphy.com/media/lWD61veKc405UGLcCx/giphy.gif';
 const textGif = './bg-elastoplaz.gif';
 
-export function HeroText() {
+function HeroText() {
   return (
     <div className='flex w-full flex-col items-center justify-center overflow-hidden'>
       <h1
@@ -23,3 +27,35 @@ export function HeroText() {
     </div>
   );
 }
+
+const HeroContent = () => {
+  return (
+    <>
+      <div className='absolute -top-40 -z-50 h-[40rem] w-full antialiased'>
+        <BackgroundBeams />
+      </div>
+
+      <div className='absolute -top-60 flex w-full items-center justify-center md:-top-32'>
+        <CountDown />
+      </div>
+      <HeroText />
+      <div className='mx-auto mb-10 flex max-w-4xl flex-col items-center justify-center p-4'>
+        <h1 className='relative z-10 bg-gradient-to-b from-neutral-200 to-neutral-600 bg-clip-text text-center font-sans text-lg font-bold text-transparent md:text-3xl lg:text-5xl'>
+          National Level Technical Symposium
+        </h1>
+        <p className='mx-auto my-2 mb-6 mt-4 max-w-lg text-center text-xs font-normal text-neutral-400 md:text-xl'>
+          by Department of Rubber & Plastics Technology,
+          <br />
+          Anna Univeristy
+        </p>
+      </div>
+      <div className='bg-red-transparent absolute -top-32 flex  h-[890px] w-full items-center justify-center md:-top-10 '>
+        <div className='z-30 mx-auto mt-8 w-fit rounded-full bg-neutral-300 px-2 py-1 text-lg font-bold text-black md:mt-24 md:px-4  md:py-2 md:text-xl '>
+          <span>16 March &apos;24</span>
+        </div>
+      </div>
+    </>
+  );
+};
+
+export default HeroContent;
