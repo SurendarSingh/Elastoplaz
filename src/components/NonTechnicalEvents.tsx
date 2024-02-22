@@ -8,7 +8,7 @@ import { BentoGrid, BentoGridItem } from './BentoGrid';
 
 export function NonTechnicalEvents() {
   return (
-    <BentoGrid className='mx-auto px-10 lg:max-w-7xl'>
+    <BentoGrid className='mx-auto px-10 pb-2 lg:max-w-7xl'>
       {items.map((item, i) => (
         <BentoGridItem
           key={i}
