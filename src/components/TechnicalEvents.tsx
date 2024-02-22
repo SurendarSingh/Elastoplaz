@@ -31,46 +31,57 @@ const Skeleton = () => (
 );
 const items = [
   {
-    title: 'The Dawn of Innovation',
-    description: 'Explore the birth of groundbreaking ideas and inventions.',
+    title: 'Workshop',
+    description: 'Give me some content',
     header: <Skeleton />,
     icon: <IconClipboardCopy className='h-4 w-4 text-neutral-500' />,
   },
   {
-    title: 'The Digital Revolution',
-    description: 'Dive into the transformative power of technology.',
+    title: 'Hackthon',
+    description: 'Give me some content',
     header: <Skeleton />,
     icon: <IconFileBroken className='h-4 w-4 text-neutral-500' />,
   },
   {
-    title: 'The Art of Design',
-    description: 'Discover the beauty of thoughtful and functional design.',
+    title: 'Paper Presentation',
+    description: 'Give me some content',
     header: <Skeleton />,
     icon: <IconSignature className='h-4 w-4 text-neutral-500' />,
   },
   {
-    title: 'The Power of Communication',
-    description:
-      'Understand the impact of effective communication in our lives.',
+    title: 'Poster Presentation',
+    description: 'Give me some content',
     header: <Skeleton />,
     icon: <IconTableColumn className='h-4 w-4 text-neutral-500' />,
   },
   {
-    title: 'The Pursuit of Knowledge',
-    description: 'Join the quest for understanding and enlightenment.',
+    title: 'Idea Presentation',
+    description: 'Give me some content',
     header: <Skeleton />,
     icon: <IconArrowWaveRightUp className='h-4 w-4 text-neutral-500' />,
   },
   {
-    title: 'The Joy of Creation',
-    description: 'Experience the thrill of bringing ideas to life.',
+    title: 'Technical Debate',
+    description: 'Give me some content',
     header: <Skeleton />,
     icon: <IconBoxAlignTopLeft className='h-4 w-4 text-neutral-500' />,
   },
   {
-    title: 'The Spirit of Adventure',
-    description: 'Embark on exciting journeys and thrilling discoveries.',
+    title: 'Technical Quiz',
+    description: 'Give me some content',
     header: <Skeleton />,
     icon: <IconBoxAlignRightFilled className='h-4 w-4 text-neutral-500' />,
+  },
+  {
+    title: 'Product decoding',
+    description: 'Give me some content',
+    header: <Skeleton />,
+    icon: <IconClipboardCopy className='h-4 w-4 text-neutral-500' />,
+  },
+  {
+    title: 'Just a minute',
+    description: 'Give me some content',
+    header: <Skeleton />,
+    icon: <IconFileBroken className='h-4 w-4 text-neutral-500' />,
   },
 ];
