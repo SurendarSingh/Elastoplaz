@@ -1,8 +1,7 @@
-'use client';
-
 // const textGif = 'https://media.giphy.com/media/RPTEEalCYvKr1dXQbO/giphy.gif';
-const textGif = 'https://media.giphy.com/media/xT9DPFHl7YFmBjsVTq/giphy.gif';
+// const textGif = 'https://media.giphy.com/media/xT9DPFHl7YFmBjsVTq/giphy.gif';
 // const textGif = 'https://media.giphy.com/media/lWD61veKc405UGLcCx/giphy.gif';
+const textGif = './bg-elastoplaz.gif';
 
 export function HeroText() {
   return (
