@@ -24,21 +24,31 @@ export const BentoGridItem = ({
   className,
   title,
   description,
+  open = false,
+  recommended = false,
+  price = 'Free',
+  image = 'https://cdn.pixabay.com/photo/2010/12/13/10/05/berries-2277_640.jpg',
 }: {
   className?: string;
   title?: string | React.ReactNode;
   description?: string | React.ReactNode;
-  header?: React.ReactNode;
-  icon?: React.ReactNode;
+  open?: boolean;
+  image?: string;
+  recommended?: boolean;
+  price?: string;
 }) => {
   return (
     <div className='relative'>
       {/* <!-- Tag Discount --> */}
-      <div className='absolute -left-1 top-0 z-30 mt-3 rounded-lg bg-green-500 px-2 text-xs font-medium text-gray-100 md:block md:text-sm'>
-        Open
-      </div>
-      <div className='absolute -left-1 top-0 z-20 mt-5 h-2 bg-green-500 px-2 md:h-3'></div>
-      <div className='absolute -left-1 top-0 z-0 mt-6 h-2 rounded-3xl bg-green-600 pl-5 md:h-3'></div>
+      {open && (
+        <>
+          <div className='absolute -left-1 top-0 z-30 mt-3 rounded-lg bg-green-500 px-2 text-xs font-medium text-gray-100 md:block md:text-sm'>
+            Open
+          </div>
+          <div className='absolute -left-1 top-0 z-20 mt-5 h-2 bg-green-500 px-2 md:h-3'></div>
+          <div className='absolute -left-1 top-0 z-0 mt-6 h-2 rounded-3xl bg-green-600 pl-5 md:h-3'></div>
+        </>
+      )}
       <div
         className={cn(
           'group/bento shadow-input z-10 row-span-1 flex h-full flex-col justify-between space-y-4 rounded-xl border border-white/[0.2] bg-black p-4 shadow-none drop-shadow-xl transition duration-200 hover:shadow-lg hover:shadow-green-800',
@@ -48,7 +58,7 @@ export const BentoGridItem = ({
         <div className='relative h-full min-h-[6rem] transition duration-200 group-hover/bento:translate-x-2'>
           <div className='relative flex h-full w-full overflow-hidden rounded-xl'>
             <Image
-              src='https://cdn.pixabay.com/photo/2010/12/13/10/05/berries-2277_640.jpg'
+              src={image}
               layout='fill'
               objectFit='cover'
               objectPosition='center'
@@ -56,14 +66,16 @@ export const BentoGridItem = ({
             />
           </div>
 
-          <div className='absolute bottom-0 right-0 mb-2 mr-2 rounded-lg bg-yellow-500 px-2 text-xs font-medium text-gray-100'>
-            Recommended
-          </div>
+          {recommended && (
+            <div className='absolute bottom-0 right-0 mb-2 mr-2 rounded-lg bg-yellow-500 px-2 text-xs font-medium text-gray-100'>
+              Recommended
+            </div>
+          )}
         </div>
         <div className='mb-2 mt-2 flex justify-between transition duration-200 group-hover/bento:translate-x-2'>
           <span className='text-lg font-bold text-neutral-200'>{title}</span>
           <span className='flex items-center rounded-full bg-white px-3 py-2 text-sm font-bold leading-none text-purple-500'>
-            $36.00
+            ₹ {price}
           </span>
         </div>
 
