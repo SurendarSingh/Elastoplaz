@@ -27,7 +27,9 @@ export function InfoSection() {
           key={index}
           className='container mx-auto flex flex-col items-center px-5 py-8 md:flex-row md:py-16'
         >
-          <div className='flex w-5/6 flex-col items-center text-center md:w-1/2 md:items-start md:px-16 md:text-left lg:flex-grow lg:px-24'>
+          <div
+            className={`${index % 2 == 0 && 'md:order-1'} flex w-5/6 flex-col items-center text-center md:w-1/2 md:items-start md:px-16 md:text-left lg:flex-grow lg:px-24`}
+          >
             <h1 className='title-font mb-4 text-2xl font-bold text-slate-100 sm:text-3xl'>
               {item.title}
             </h1>
