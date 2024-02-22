@@ -12,9 +12,11 @@ function HeroText() {
     <div className='flex w-full flex-col items-center justify-center overflow-hidden'>
       <h1
         style={{ backgroundImage: `url(${textGif})` }}
-        className='relative z-20 bg-cover bg-clip-text text-center font-hackedKerx text-5xl uppercase tracking-widest text-transparent drop-shadow-xl md:text-8xl lg:text-9xl xl:text-[12rem]'
+        className='relative z-20 bg-cover bg-clip-text text-center font-hackedKerx text-8xl uppercase tracking-widest text-transparent drop-shadow-xl md:text-8xl lg:text-9xl xl:text-[12rem]'
       >
-        Elastoplaz&apos;24
+        Elasto
+        <br className='md:hidden' />
+        plaz&apos;24
       </h1>
 
       <div className='relative h-2 w-[20rem] md:w-[40rem] lg:w-[80rem]'>
@@ -35,7 +37,7 @@ const HeroContent = () => {
         <BackgroundBeams />
       </div>
 
-      <div className='absolute -top-60 flex w-full items-center justify-center md:-top-32'>
+      <div className='absolute -top-40 flex w-full items-center justify-center md:-top-32'>
         <CountDown />
       </div>
       <HeroText />

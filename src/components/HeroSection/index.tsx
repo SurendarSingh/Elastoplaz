@@ -39,7 +39,7 @@ export function HeroSection() {
     >
       <div
         className={cn(
-          'sticky top-64 flex flex-col items-center justify-center md:top-40'
+          'sticky top-52 flex flex-col items-center justify-center md:top-40'
         )}
       >
         <HeroContent />
