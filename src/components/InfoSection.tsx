@@ -1,5 +1,5 @@
 import React from 'react';
-import { StickyScroll } from './StickyScroll';
+import Image from 'next/image';
 
 const content = [
   {
@@ -18,6 +18,34 @@ const content = [
       'https://www.shutterstock.com/shutterstock/photos/1090916522/display_1500/stock-photo-the-business-people-standing-on-the-white-wall-background-1090916522.jpg',
   },
 ];
+
 export function InfoSection() {
-  return <StickyScroll content={content} />;
+  return (
+    <section className='mx-auto max-w-7xl'>
+      {content.map((item, index) => (
+        <div
+          key={index}
+          className='container mx-auto flex flex-col items-center px-5 py-8 md:flex-row md:py-16'
+        >
+          <div className='flex w-5/6 flex-col items-center text-center md:w-1/2 md:items-start md:px-16 md:text-left lg:flex-grow lg:px-24'>
+            <h1 className='title-font mb-4 text-2xl font-bold text-slate-100 sm:text-3xl'>
+              {item.title}
+            </h1>
+            <p className='mb-8 text-justify text-sm leading-relaxed text-slate-300 md:text-base'>
+              {item.description}
+            </p>
+          </div>
+          <div className='relative mb-10 h-80 w-5/6 rounded-md md:mb-0 md:w-1/2 lg:w-full lg:max-w-lg'>
+            <Image
+              src={item.image}
+              layout='fill'
+              objectFit='cover'
+              objectPosition='center'
+              alt='Image'
+            />
+          </div>
+        </div>
+      ))}
+    </section>
+  );
 }
