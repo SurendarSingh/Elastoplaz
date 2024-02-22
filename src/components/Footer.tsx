@@ -2,16 +2,16 @@ import React from 'react';
 
 const Footer = () => {
   return (
-    <footer className='bg-black px-16 py-12'>
-      <hr className='my-8 border-gray-700' />
-      <div className='sm:flex sm:flex-row sm:items-center sm:justify-between'>
+    <footer className='bg-black px-16 pb-5'>
+      <hr className='mb-5 border-gray-700' />
+      <div className='text-center sm:flex sm:flex-row sm:items-center sm:justify-between'>
         <p className='text-sm text-gray-400 sm:order-1'>
           <a href='' target='_blank' className='mx-1 hover:underline'>
             SPART
           </a>
           © 2024 - All Rights Reserved.
         </p>
-        <div className='flex space-x-5 max-sm:mt-4'>
+        <div className='flex justify-center space-x-5 max-sm:mt-4'>
           <a
             href='#'
             className='text-base text-gray-400 transition-all hover:text-white'
