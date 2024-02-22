@@ -51,18 +51,16 @@ const people = [
 
 export function Team() {
   return (
-    <div className='relative'>
-      <WavyBackground className='mx-auto max-w-4xl pb-40'>
-        <p className='inter-var text-center text-2xl font-bold text-white md:text-4xl lg:text-7xl'>
-          Meet our Cool Team
-        </p>
-        <div className='mb-2 mt-8 flex w-full flex-row items-center justify-center'>
-          <AnimatedTooltip items={people} />
-        </div>
-        <p className='inter-var text-center text-base font-normal text-white md:text-lg'>
-          Spartian 2024
-        </p>
-      </WavyBackground>
-    </div>
+    <WavyBackground className='mx-auto max-w-4xl py-40'>
+      <p className='inter-var text-center text-2xl font-bold text-white md:text-4xl lg:text-7xl'>
+        Meet our Cool Team
+      </p>
+      <div className='mb-2 mt-8 flex w-full flex-row items-center justify-center'>
+        <AnimatedTooltip items={people} />
+      </div>
+      <p className='inter-var text-center text-base font-normal text-white md:text-lg'>
+        Spartian 2024
+      </p>
+    </WavyBackground>
   );
 }
