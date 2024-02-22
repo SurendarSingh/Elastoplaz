@@ -40,9 +40,9 @@ export function InfoSection() {
           <div className='group/card relative h-60 w-5/6 overflow-hidden rounded-lg bg-transparent max-md:mb-10 md:h-96 md:w-2/5'>
             <Image
               src={item.image}
-              layout='fill'
-              objectFit='cover'
-              objectPosition='center'
+              fill
+              sizes='(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw'
+              style={{ objectFit: 'cover', objectPosition: 'center' }}
               alt='Image'
             />
           </div>

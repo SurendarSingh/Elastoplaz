@@ -11,7 +11,7 @@ export const BentoGrid = ({
   return (
     <div
       className={cn(
-        'mx-auto grid max-w-7xl grid-cols-1 gap-4 md:auto-rows-[18rem] md:grid-cols-3 ',
+        'mx-auto grid max-w-7xl grid-cols-1 gap-4 md:auto-rows-[24rem] md:grid-cols-3 ',
         className
       )}
     >
@@ -59,9 +59,9 @@ export const BentoGridItem = ({
           <div className='relative flex h-full w-full overflow-hidden rounded-xl'>
             <Image
               src={image}
-              layout='fill'
-              objectFit='cover'
-              objectPosition='center'
+              fill
+              sizes='(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw'
+              style={{ objectFit: 'cover', objectPosition: 'center' }}
               alt='Image'
             />
           </div>
@@ -91,13 +91,13 @@ export const BentoGridItem = ({
             xmlns='http://www.w3.org/2000/svg'
             fill='none'
             viewBox='0 0 24 24'
-            stroke-width='2'
+            strokeWidth='2'
             stroke='currentColor'
             className='h-4 w-4'
           >
             <path
-              stroke-linecap='round'
-              stroke-linejoin='round'
+              strokeLinecap='round'
+              strokeLinejoin='round'
               d='M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3'
             ></path>
           </svg>
