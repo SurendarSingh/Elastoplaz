@@ -23,7 +23,7 @@ export const BentoGrid = ({
 export const BentoGridItem = ({
   className,
   title,
-  description,
+  // description,
   open = false,
   recommended = false,
   price = 'Free',
@@ -31,7 +31,7 @@ export const BentoGridItem = ({
 }: {
   className?: string;
   title?: string | React.ReactNode;
-  description?: string | React.ReactNode;
+  // description?: string | React.ReactNode;
   open?: boolean;
   image?: string;
   recommended?: boolean;
@@ -51,7 +51,7 @@ export const BentoGridItem = ({
       )}
       <div
         className={cn(
-          'group/bento shadow-input z-10 row-span-1 flex h-full flex-col justify-between space-y-4 rounded-xl border border-white/[0.2] bg-black p-4 shadow-none drop-shadow-xl transition duration-200 hover:shadow-lg hover:shadow-green-800',
+          'group/bento shadow-input z-10 row-span-1 flex h-full flex-col justify-between space-y-4 rounded-xl border border-white/[0.2] bg-gray-500/10 p-4 shadow-none drop-shadow-xl transition duration-200 hover:shadow-lg hover:shadow-green-800',
           className
         )}
       >
@@ -79,29 +79,56 @@ export const BentoGridItem = ({
           </span>
         </div>
 
-        <div className='text-xs font-normal text-neutral-300 transition duration-200 group-hover/bento:translate-x-2'>
+        {/* <div className='text-xs font-normal text-neutral-300 transition duration-200 group-hover/bento:translate-x-2'>
           {description}
-        </div>
-        <button
-          className='flex select-none items-end justify-end gap-2 rounded-lg px-4 py-2 font-sans text-xs font-bold uppercase text-slate-300 transition-all duration-200 hover:bg-gray-100/10 active:bg-gray-900/20 disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none group-hover/bento:translate-x-2'
-          type='button'
-        >
-          Read More
-          <svg
-            xmlns='http://www.w3.org/2000/svg'
-            fill='none'
-            viewBox='0 0 24 24'
-            strokeWidth='2'
-            stroke='currentColor'
-            className='h-4 w-4'
+        </div> */}
+
+        <div className='flex justify-between'>
+          <button className='group relative inline-block cursor-pointer rounded-full bg-slate-800 p-px text-xs font-semibold leading-6 text-white no-underline shadow-2xl shadow-zinc-900 transition duration-200 group-hover/bento:translate-x-2'>
+            <span className='absolute inset-0 overflow-hidden rounded-full'>
+              <span className='absolute inset-0 rounded-full bg-[image:radial-gradient(75%_100%_at_50%_0%,rgba(56,189,248,0.6)_0%,rgba(56,189,248,0)_75%)] opacity-0 transition-opacity duration-500 group-hover:opacity-100'></span>
+            </span>
+            <div className='relative z-10 flex items-center space-x-2 rounded-full bg-zinc-950/10 px-4 py-2 ring-1 ring-white/10 '>
+              <span className='text-sm'>{`Register Now`}</span>
+              {/* <svg
+                width='16'
+                height='16'
+                viewBox='0 0 24 24'
+                fill='none'
+                xmlns='http://www.w3.org/2000/svg'
+              >
+                <path
+                  stroke='currentColor'
+                  strokeLinecap='round'
+                  strokeLinejoin='round'
+                  strokeWidth='1.5'
+                  d='M10.75 8.75L14.25 12L10.75 15.25'
+                ></path>
+              </svg> */}
+            </div>
+            <span className='absolute -bottom-0 left-[1.125rem] h-px w-[calc(100%-2.25rem)] bg-gradient-to-r from-emerald-400/0 via-emerald-400/90 to-emerald-400/0 transition-opacity duration-500 group-hover:opacity-40'></span>
+          </button>
+          <button
+            className='flex select-none items-center justify-center gap-2 rounded-lg px-4 py-2 font-sans text-xs font-bold uppercase text-slate-300 transition-all duration-200 hover:bg-gray-100/10 active:bg-gray-900/20 disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none group-hover/bento:translate-x-2'
+            type='button'
           >
-            <path
-              strokeLinecap='round'
-              strokeLinejoin='round'
-              d='M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3'
-            ></path>
-          </svg>
-        </button>
+            Read More
+            <svg
+              xmlns='http://www.w3.org/2000/svg'
+              fill='none'
+              viewBox='0 0 24 24'
+              strokeWidth='2'
+              stroke='currentColor'
+              className='h-4 w-4'
+            >
+              <path
+                strokeLinecap='round'
+                strokeLinejoin='round'
+                d='M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3'
+              ></path>
+            </svg>
+          </button>
+        </div>
       </div>
     </div>
   );
