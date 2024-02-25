@@ -8,7 +8,7 @@ export function NonTechnicalEvents() {
         <BentoGridItem
           key={i}
           title={item.title}
-          description={item.description}
+          // description={item.description}
           open={item.open}
           recommended={item.recommended}
           image={item.image}
@@ -24,13 +24,17 @@ const items = [
     title: 'Connections',
     description: 'Give me some content',
     image: '/Events/connexion.jpg',
+    open: true,
+    recommended: true,
   },
   {
     title: 'Photography',
     description: 'Give me some content',
+    open: true,
   },
   {
     title: 'Reels/Short film',
     description: 'Give me some content',
+    open: true,
   },
 ];
