@@ -44,29 +44,24 @@ const CountDown = () => {
     };
   }, [countDownDate]);
 
-  const TimeCircle = ({ id, unit, value }: any) => (
-    <li>
-      <div
-        className='flex h-16 w-16 items-center justify-center rounded-full border-4 border-dotted border-gray-700 bg-gradient-to-b from-neutral-200 to-neutral-600 bg-clip-text text-center text-2xl font-bold text-transparent shadow-2xl lg:h-24 lg:w-24 lg:text-4xl'
-        id={id}
-      >
-        {value}
-      </div>
-      <p className='mt-2 bg-gradient-to-b from-neutral-200 to-neutral-300 bg-clip-text text-center text-xs text-transparent shadow-2xl'>
-        {unit}
-      </p>
-    </li>
-  );
+  // const TimeCircle = ({ id, unit, value }: any) => (
+  //   <li>
+  //     <div
+  //       className='flex h-16 w-16 items-center justify-center rounded-full border-4 border-dotted border-gray-700 bg-gradient-to-b from-neutral-200 to-neutral-600 bg-clip-text text-center text-2xl font-bold text-transparent shadow-2xl lg:h-24 lg:w-24 lg:text-4xl'
+  //       id={id}
+  //     >
+  //       {value}
+  //     </div>
+  //     <p className='mt-2 bg-gradient-to-b from-neutral-200 to-neutral-300 bg-clip-text text-center text-xs text-transparent shadow-2xl'>
+  //       {unit}
+  //     </p>
+  //   </li>
+  // );
 
   return (
-    <div className='flex cursor-default items-center justify-center'>
-      <ul className='mx-auto flex w-full place-content-center gap-5 text-gray-50 md:place-content-end'>
-        <TimeCircle id='cdD' unit='Days' value={days} />
-        <TimeCircle id='cdH' unit='Hours' value={hours} />
-        <TimeCircle id='cdM' unit='Minutes' value={minutes} />
-        <TimeCircle id='cdS' unit='Seconds' value={seconds} />
-      </ul>
-    </div>
+    <>
+      {days} Days {hours} Hours {minutes} Min {seconds} Sec To Go
+    </>
   );
 };
 

@@ -1,6 +1,5 @@
 import React from 'react';
 import CountDown from './CountDown';
-import { BackgroundBeams } from './BackgroundBeam';
 
 // const textGif = 'https://media.giphy.com/media/RPTEEalCYvKr1dXQbO/giphy.gif';
 // const textGif = 'https://media.giphy.com/media/xT9DPFHl7YFmBjsVTq/giphy.gif';
@@ -33,10 +32,6 @@ function HeroText() {
 const HeroContent = () => {
   return (
     <>
-      <div className='absolute -top-40 -z-50 h-[40rem] w-full antialiased'>
-        <BackgroundBeams />
-      </div>
-
       <div className='absolute -top-40 flex w-full items-center justify-center md:-top-32'>
         <CountDown />
       </div>
@@ -50,11 +45,6 @@ const HeroContent = () => {
           <br />
           Anna Univeristy
         </p>
-      </div>
-      <div className='bg-red-transparent absolute -top-32 flex  h-[890px] w-full items-center justify-center md:-top-10 '>
-        <div className='z-30 mx-auto mt-8 w-fit rounded-full bg-neutral-300 px-2 py-1 text-lg font-bold text-black md:mt-24 md:px-4  md:py-2 md:text-xl '>
-          <span>16 March &apos;24</span>
-        </div>
       </div>
     </>
   );
