@@ -12,7 +12,7 @@ const content = [
   {
     title: 'What we do?',
     description:
-      'We take pride in organising a national-level intercollegiate technical symposium, "Elastoplaz", which provides the right stage for Rubber and Plastics Technologists in India. Elastoplaz 2018 will be a vibrant concoction of various technical events. We are unfurling new events this year to commemorate this 30th edition. The events are scheduled for two days. There will be some non-technical events for additional entertainment.',
+      'We take pride in organising a national-level intercollegiate technical symposium, "Elastoplaz", which provides the right stage for Rubber and Plastics Technologists in India. Elastoplaz 2024 will be a vibrant concoction of various technical events. We are unfurling new events this year to commemorate this 30th edition. The events are scheduled for two days. There will be some non-technical events for additional entertainment.',
 
     image:
       'https://www.shutterstock.com/shutterstock/photos/1090916522/display_1500/stock-photo-the-business-people-standing-on-the-white-wall-background-1090916522.jpg',

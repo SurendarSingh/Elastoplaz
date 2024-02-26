@@ -19,6 +19,7 @@ const TechnicalEvents: any = [
   {
     title: 'Hackthon',
     description: 'Give me some content',
+    image: '/Events/hackathon-1.jpg',
     price: '500',
     open: true,
     recommended: true,
@@ -71,7 +72,7 @@ const TechnicalEvents: any = [
   {
     title: 'Just a minute',
     description: 'Give me some content',
-    image: '/Events/just-a-minute.jpg',
+    image: '/Events/just-a-minute.jpeg',
     price: '100',
     open: true,
   },

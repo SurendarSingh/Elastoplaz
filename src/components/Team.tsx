@@ -4,6 +4,12 @@ import { AnimatedTooltip } from './AnimatedToolTip';
 
 const people = [
   {
+    id: 0,
+    name: 'Dr. K.Ravi Chandran',
+    designation: 'SPART President',
+    image: '/Team/DrRavichandran.jpeg',
+  },
+  {
     id: 1,
     name: 'Selva Nithilan',
     designation: 'Chairperson',
@@ -55,43 +61,37 @@ const people = [
     id: 9,
     name: 'Goutham',
     designation: 'Spart Represantative',
-    image:
-      'https://images.unsplash.com/photo-1580489944761-15a19d654956?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8YXZhdGFyfGVufDB8fDB8fHww&auto=format&fit=crop&w=800&q=60',
+    image: '/Team/goutham.jpeg',
   },
   {
     id: 10,
     name: 'Srinivasan',
     designation: 'Alumni Coordinator',
-    image:
-      'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fGF2YXRhcnxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=800&q=60',
+    image: '/Team/srini.jpeg',
   },
   {
     id: 11,
     name: 'Ahilandeswari',
     designation: 'Alumni Coordinator',
-    image:
-      'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=3540&q=80',
+    image: '/Team/ahila.jpg',
   },
   {
     id: 12,
     name: 'Salaisiva',
     designation: 'Alumni Coordinator',
-    image:
-      'https://images.unsplash.com/photo-1544725176-7c40e5a71c5e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=3534&q=80',
+    image: '/Team/salai.jpeg',
   },
   {
     id: 13,
     name: 'Sangeetha',
     designation: 'Alumni Coordinator',
-    image:
-      'https://images.unsplash.com/photo-1544725176-7c40e5a71c5e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=3534&q=80',
+    image: '/Team/sangeetha.jpeg',
   },
   {
     id: 14,
     name: 'Gnaneshwaran',
     designation: 'IRI Coordinator ',
-    image:
-      'https://images.unsplash.com/photo-1544725176-7c40e5a71c5e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=3534&q=80',
+    image: '/Team/gnanesh.jpeg',
   },
   {
     id: 15,
@@ -103,8 +103,7 @@ const people = [
     id: 16,
     name: 'Naresh',
     designation: 'Library Incharge',
-    image:
-      'https://images.unsplash.com/photo-1544725176-7c40e5a71c5e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=3534&q=80',
+    image: '/Team/naresh.jpeg',
   },
 ];
 
