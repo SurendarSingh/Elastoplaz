@@ -51,10 +51,10 @@ const HeroContent = () => {
           Anna Univeristy
         </p>
       </div>
-      <div className='bg-red-transparent absolute -top-32 flex  h-[890px] w-full items-center justify-center md:-top-10 '>
-        <div className='z-30 mx-auto mt-8 w-fit rounded-full bg-neutral-300 px-2 py-1 text-lg font-bold text-black md:mt-24 md:px-4  md:py-2 md:text-xl '>
-          <span>16 March &apos;24</span>
-        </div>
+      <div className='bg-red-transparent absolute -top-32 flex h-[890px] w-full items-center justify-center md:-top-10 '>
+        <span className='z-30 mx-auto mt-8 inline-flex w-fit items-center justify-center gap-x-3 rounded-full border border-transparent bg-neutral-300 bg-gradient-to-tl from-blue-600 to-violet-600 px-2 py-1 text-center text-base font-medium text-white shadow-lg shadow-transparent hover:shadow-blue-700/50 focus:outline-none focus:ring-2 focus:ring-blue-600 focus:ring-offset-2 focus:ring-offset-gray-800 md:mt-24 md:px-6 md:py-3 md:text-xl'>
+          16 March 2024
+        </span>
       </div>
     </>
   );
