@@ -3,7 +3,7 @@ import ContactForm from './ContactForm';
 
 export const ContactUs = () => {
   return (
-    <div className='relative mx-4 mb-6 grid items-center gap-16 overflow-hidden rounded-3xl border-white/[0.2] bg-gray-800/10 p-10 shadow-[0_2px_10px_-3px_rgba(6,81,237,0.3)] before:absolute before:left-0 before:h-full before:w-[300px] before:bg-blue-800/80 max-md:before:hidden md:mx-6 md:grid-cols-2 md:border lg:mx-10 xl:mx-auto xl:max-w-7xl'>
+    <div className='relative grid items-center gap-16 overflow-hidden rounded-3xl border-white/[0.2] bg-gray-800/10 p-10 shadow-[0_2px_10px_-3px_rgba(6,81,237,0.3)] before:absolute before:left-0 before:h-full before:w-[300px] before:bg-blue-800/80 max-md:before:hidden md:mx-6 md:mb-6 md:grid-cols-2 md:border lg:mx-10 xl:mx-auto xl:max-w-7xl'>
       <div className='relative z-10 h-full max-md:order-1 max-md:min-h-[350px]'>
         <Suspense fallback={<div>Loading Map...</div>}>
           <iframe
@@ -14,14 +14,16 @@ export const ContactUs = () => {
         </Suspense>
       </div>
       <div>
-        <h2 className='text-3xl font-extrabold text-gray-50'>Get In Touch</h2>
-        <p className='mt-3 text-sm text-gray-400'>
+        <h2 className='text-center text-3xl font-extrabold text-gray-50'>
+          Get In Touch
+        </h2>
+        <p className='mt-3 text-center text-sm text-gray-400'>
           We are here to help and answer any question you might have. Contact
           for any queries, feedback or issues. We look forward to hearing from
           you.
         </p>
         <ContactForm />
-        <ul className='mt-4 flex justify-center text-gray-200 max-lg:flex-col max-lg:items-center max-lg:space-y-2 lg:space-x-6 '>
+        <ul className='mt-6 flex justify-center text-gray-200 max-lg:flex-col max-lg:items-center max-lg:space-y-2 lg:space-x-6 '>
           <li className='flex items-center hover:text-blue-500'>
             <svg
               xmlns='http://www.w3.org/2000/svg'
