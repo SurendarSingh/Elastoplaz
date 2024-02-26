@@ -66,6 +66,7 @@ const PopupModal = ({ open, modalClose, eventData }: any) => {
                   src={eventData.image}
                   alt={eventData.title}
                   unoptimized
+                  priority
                   width={600}
                   height={300}
                   className='rounded-lg'
