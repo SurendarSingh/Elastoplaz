@@ -1,5 +1,21 @@
 import Image from 'next/image';
-import React from 'react';
+import React, { Suspense } from 'react';
+
+const ImageSkeleton = () => {
+  return (
+    <div className='flex h-96 w-full animate-pulse items-center justify-center rounded bg-gray-300 dark:bg-gray-700'>
+      <svg
+        className='h-10 w-10 text-gray-200 dark:text-gray-600'
+        aria-hidden='true'
+        xmlns='http://www.w3.org/2000/svg'
+        fill='currentColor'
+        viewBox='0 0 20 18'
+      >
+        <path d='M18 0H2a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2Zm-5.5 4a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3Zm4.376 10.481A1 1 0 0 1 16 15H4a1 1 0 0 1-.895-1.447l3.5-7A1 1 0 0 1 7.468 6a.965.965 0 0 1 .9.5l2.775 4.757 1.546-1.887a1 1 0 0 1 1.618.1l2.541 4a1 1 0 0 1 .028 1.011Z' />
+      </svg>
+    </div>
+  );
+};
 
 const PopupModal = ({ open, modalClose, eventData }: any) => {
   return (
@@ -45,14 +61,16 @@ const PopupModal = ({ open, modalClose, eventData }: any) => {
           </div>
           <div className='overflow-y-auto p-4'>
             <div className='space-y-4'>
-              <Image
-                src={eventData.image}
-                alt={eventData.title}
-                loader={({ src }) => src}
-                unoptimized
-                width={500}
-                height={500}
-              />
+              <Suspense fallback={<ImageSkeleton />}>
+                <Image
+                  src={eventData.image}
+                  alt={eventData.title}
+                  unoptimized
+                  width={600}
+                  height={300}
+                  className='rounded-lg'
+                />
+              </Suspense>
             </div>
           </div>
           <div className='flex items-center justify-center gap-x-12 border-t px-4 py-3 dark:border-gray-700'>
