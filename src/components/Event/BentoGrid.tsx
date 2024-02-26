@@ -27,15 +27,14 @@ export const BentoGridItem = ({
   open = false,
   recommended = false,
   price = 'Free',
-  image = 'https://cdn.pixabay.com/photo/2010/12/13/10/05/berries-2277_640.jpg',
-
+  image,
   modalOpen,
 }: {
   className?: string;
-  title?: string | React.ReactNode;
+  title: string;
   // description?: string | React.ReactNode;
   open?: boolean;
-  image?: string;
+  image: string;
   recommended?: boolean;
   price?: string;
   modalOpen: any;
@@ -65,7 +64,7 @@ export const BentoGridItem = ({
               fill
               sizes='(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw'
               style={{ objectFit: 'cover', objectPosition: 'center' }}
-              alt='Image'
+              alt={title}
               onClick={modalOpen}
             />
           </div>
