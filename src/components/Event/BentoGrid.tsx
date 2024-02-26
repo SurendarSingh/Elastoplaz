@@ -26,7 +26,7 @@ export const BentoGridItem = ({
   // description,
   open = false,
   recommended = false,
-  price = 'Free',
+  price,
   image,
   modalOpen,
 }: {

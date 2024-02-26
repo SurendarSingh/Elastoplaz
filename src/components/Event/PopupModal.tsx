@@ -114,9 +114,9 @@ const PopupModal = ({ open, modalClose, eventData }: any) => {
                       </svg>
                       <div>
                         <h3 className='mb-2 text-xl font-semibold'>
-                          Solo Registration
+                          {eventData.type}
                         </h3>
-                        <p className='text-sm text-gray-500'>
+                        <p className='text-lg text-gray-500'>
                           Fee: ₹{eventData.price}
                         </p>
                       </div>
@@ -148,7 +148,7 @@ const PopupModal = ({ open, modalClose, eventData }: any) => {
                           Price Pool
                         </h3>
                         {eventData.prize ? (
-                          <ul className='text-sm text-gray-500'>
+                          <ul className='text-lg text-gray-500'>
                             {eventData.prize.map(
                               (prize: string, index: number) => (
                                 <li key={index}>{prize}</li>
@@ -158,6 +158,31 @@ const PopupModal = ({ open, modalClose, eventData }: any) => {
                         ) : (
                           <p className='text-sm text-gray-500'>Not Available</p>
                         )}
+                      </div>
+                    </div>
+                    <div className='flex w-full rounded-md bg-white p-4 shadow-md'>
+                      <svg
+                        xmlns='http://www.w3.org/2000/svg'
+                        fill='currentColor'
+                        className='mr-6 h-12 w-12 shrink-0 rounded-md bg-gray-100 p-3'
+                        viewBox='0 0 395.71 395.71'
+                      >
+                        <g>
+                          <path
+                            d='M197.849,0C122.131,0,60.531,61.609,60.531,137.329c0,72.887,124.591,243.177,129.896,250.388l4.951,6.738
+		c0.579,0.792,1.501,1.255,2.471,1.255c0.985,0,1.901-0.463,2.486-1.255l4.948-6.738c5.308-7.211,129.896-177.501,129.896-250.388
+		C335.179,61.609,273.569,0,197.849,0z M197.849,88.138c27.13,0,49.191,22.062,49.191,49.191c0,27.115-22.062,49.191-49.191,49.191
+		c-27.114,0-49.191-22.076-49.191-49.191C148.658,110.2,170.734,88.138,197.849,88.138z'
+                          />
+                        </g>
+                      </svg>
+                      <div>
+                        <h3 className='mb-2 text-lg font-semibold'>
+                          {eventData.time}
+                        </h3>
+                        <p className='text-lg text-gray-500'>
+                          {eventData.location}
+                        </p>
                       </div>
                     </div>
                     <div className='flex rounded-md bg-white p-4 shadow-md'>
@@ -174,12 +199,12 @@ const PopupModal = ({ open, modalClose, eventData }: any) => {
                       </svg>
                       <div>
                         <h3 className='mb-2 text-xl font-semibold'>
-                          Organizer
+                          Organizers
                         </h3>
                         {eventData.organizer ? (
                           eventData.organizer.map(
                             (organizer: string, index: number) => (
-                              <p key={index} className='text-sm text-gray-500'>
+                              <p key={index} className='text-lg text-gray-500'>
                                 {organizer}
                               </p>
                             )
