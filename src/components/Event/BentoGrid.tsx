@@ -28,6 +28,8 @@ export const BentoGridItem = ({
   recommended = false,
   price = 'Free',
   image = 'https://cdn.pixabay.com/photo/2010/12/13/10/05/berries-2277_640.jpg',
+
+  modalOpen,
 }: {
   className?: string;
   title?: string | React.ReactNode;
@@ -36,6 +38,7 @@ export const BentoGridItem = ({
   image?: string;
   recommended?: boolean;
   price?: string;
+  modalOpen: any;
 }) => {
   return (
     <div className='relative'>
@@ -63,6 +66,7 @@ export const BentoGridItem = ({
               sizes='(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw'
               style={{ objectFit: 'cover', objectPosition: 'center' }}
               alt='Image'
+              onClick={modalOpen}
             />
           </div>
 
@@ -111,6 +115,7 @@ export const BentoGridItem = ({
           <button
             className='flex select-none items-center justify-center gap-2 rounded-lg px-4 py-2 font-sans text-xs font-bold uppercase text-slate-300 transition-all duration-200 hover:bg-gray-100/10 active:bg-gray-900/20 disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none group-hover/bento:translate-x-2'
             type='button'
+            onClick={modalOpen}
           >
             Read More
             <svg
