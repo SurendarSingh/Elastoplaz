@@ -11,7 +11,7 @@ function HeroText() {
   return (
     <div className='flex w-full flex-col items-center justify-center overflow-hidden'>
       <h1
-        style={{ backgroundImage: `url(${textGif})` }}
+        style={{ backgroundImage: `url(${textGif})`, backgroundSize: 'cover' }}
         className='relative z-20 bg-cover bg-clip-text text-center font-hackedKerx text-8xl uppercase tracking-widest text-transparent drop-shadow-xl md:text-8xl lg:text-9xl xl:text-[12rem]'
       >
         Elasto
