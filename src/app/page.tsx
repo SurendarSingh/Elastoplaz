@@ -6,7 +6,7 @@ import { Team } from '@/components/Team';
 
 export default function Home() {
   return (
-    <main className='bg-black'>
+    <main className='bg-slate-900'>
       <HeroSection />
       <InfoSection />
       <Event />

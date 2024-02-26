@@ -34,7 +34,7 @@ export function HeroSection() {
 
   return (
     <div
-      className='relative h-[100vh] w-full overflow-clip bg-black pt-40 dark:border dark:border-white/[0.1] md:h-[180vh]'
+      className='relative h-[100vh] w-full overflow-clip bg-slate-900 bg-gradient-to-b from-violet-600/[.05] via-transparent pt-40 dark:border dark:border-white/[0.1] md:h-[180vh]'
       ref={ref}
     >
       <div

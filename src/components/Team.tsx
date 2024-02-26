@@ -110,7 +110,10 @@ const people = [
 
 export function Team() {
   return (
-    <WavyBackground className='mx-auto max-w-4xl py-40'>
+    <WavyBackground
+      backgroundFill='rgb(15 23 42)'
+      className='mx-auto max-w-4xl py-40'
+    >
       <p className='inter-var text-center text-3xl font-bold text-white md:text-4xl lg:text-7xl'>
         Meet our Cool Team
       </p>
