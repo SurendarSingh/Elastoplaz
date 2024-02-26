@@ -1,3 +1,4 @@
+import { ContactUs } from '@/components/ContactUs';
 import Event from '@/components/Event';
 import Footer from '@/components/Footer';
 import { HeroSection } from '@/components/HeroSection';
@@ -11,6 +12,7 @@ export default function Home() {
       <InfoSection />
       <Event />
       <Team />
+      <ContactUs />
       <Footer />
     </main>
   );
