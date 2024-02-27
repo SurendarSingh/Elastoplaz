@@ -3,7 +3,7 @@ import ContactForm from './ContactForm';
 
 export const ContactUs = () => {
   return (
-    <div className='relative grid items-center gap-16 overflow-hidden rounded-3xl border-white/[0.2] bg-gray-800/10 p-10 shadow-[0_2px_10px_-3px_rgba(6,81,237,0.3)] before:absolute before:left-0 before:h-full before:w-[300px] before:bg-blue-800/80 max-md:before:hidden md:mx-6 md:mb-6 md:grid-cols-2 md:border lg:mx-10 xl:mx-auto xl:max-w-7xl'>
+    <div className='relative grid items-center gap-16 overflow-hidden rounded-3xl border-white/[0.2] bg-gray-800/10 p-10 shadow-[0_2px_10px_-3px_rgba(6,81,237,0.3)] before:absolute before:left-0 before:h-full before:w-[300px] before:bg-blue-800/80 max-md:before:hidden max-sm:pt-0 md:mx-6 md:mb-6 md:grid-cols-2 md:border lg:mx-10 xl:mx-auto xl:max-w-7xl'>
       <div className='relative z-10 h-full max-md:order-1 max-md:min-h-[350px]'>
         <Suspense fallback={<div>Loading Map...</div>}>
           <iframe
@@ -38,7 +38,7 @@ export const ContactUs = () => {
               />
             </svg>
             <a className='ml-3 text-sm text-current'>
-              <strong>info@example.com</strong>
+              <strong>spart@mitindia.com</strong>
             </a>
           </li>
           <li className='flex items-center text-current hover:text-blue-500'>
@@ -55,7 +55,28 @@ export const ContactUs = () => {
               ></path>
             </svg>
             <a className='ml-3 text-sm text-current'>
-              <strong>+158 996 888</strong>
+              <strong>+91 96775 54529</strong>
+            </a>
+          </li>
+          <li className='flex items-center text-current hover:text-blue-500'>
+            <svg
+              xmlns='http://www.w3.org/2000/svg'
+              width='16px'
+              height='16px'
+              fill='currentColor'
+              viewBox='0 0 395.71 395.71'
+            >
+              <g>
+                <path
+                  d='M197.849,0C122.131,0,60.531,61.609,60.531,137.329c0,72.887,124.591,243.177,129.896,250.388l4.951,6.738
+		c0.579,0.792,1.501,1.255,2.471,1.255c0.985,0,1.901-0.463,2.486-1.255l4.948-6.738c5.308-7.211,129.896-177.501,129.896-250.388
+		C335.179,61.609,273.569,0,197.849,0z M197.849,88.138c27.13,0,49.191,22.062,49.191,49.191c0,27.115-22.062,49.191-49.191,49.191
+		c-27.114,0-49.191-22.076-49.191-49.191C148.658,110.2,170.734,88.138,197.849,88.138z'
+                />
+              </g>
+            </svg>
+            <a className='ml-3 text-sm text-current'>
+              <strong>RPT. MIT. Chrompet</strong>
             </a>
           </li>
         </ul>
