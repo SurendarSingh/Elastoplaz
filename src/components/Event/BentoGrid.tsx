@@ -29,6 +29,7 @@ export const BentoGridItem = ({
   price,
   image,
   modalOpen,
+  link,
 }: {
   className?: string;
   title: string;
@@ -38,6 +39,7 @@ export const BentoGridItem = ({
   recommended?: boolean;
   price?: string;
   modalOpen: any;
+  link: string;
 }) => {
   return (
     <div className='relative'>
@@ -87,7 +89,12 @@ export const BentoGridItem = ({
         </div> */}
 
         <div className='flex justify-between'>
-          <button className='group relative inline-block cursor-pointer rounded-full bg-slate-800 p-px text-xs font-semibold leading-6 text-white no-underline shadow-2xl shadow-zinc-900 transition duration-200 group-hover/bento:translate-x-2'>
+          <button
+            className='group relative inline-block cursor-pointer rounded-full bg-slate-800 p-px text-xs font-semibold leading-6 text-white no-underline shadow-2xl shadow-zinc-900 transition duration-200 group-hover/bento:translate-x-2'
+            onClick={() => {
+              if (link) window.open(link, '_blank');
+            }}
+          >
             <span className='absolute inset-0 overflow-hidden rounded-full'>
               <span className='absolute inset-0 rounded-full bg-[image:radial-gradient(75%_100%_at_50%_0%,rgba(56,189,248,0.6)_0%,rgba(56,189,248,0)_75%)] opacity-0 transition-opacity duration-500 group-hover:opacity-100'></span>
             </span>

@@ -15,11 +15,12 @@ const TechnicalEvents = [
     price: '300',
     open: true,
     recommended: true,
-    prize: ['Disclosed'],
+    prize: ['Industry Learning Experience'],
     type: 'Solo Registration',
     location: 'RPT Dept., MIT',
     time: 'Disclosed',
-    organizer: ['Disclosed'],
+    organizer: ['Selva Nithilan (8939001281)', 'Subashini (6379157899)'],
+    link: 'https://forms.gle/xinL6XcB8kqiiLR29',
   },
   {
     title: 'Hackathon',
@@ -35,6 +36,7 @@ const TechnicalEvents = [
       'Ahilandeswari (6374964674)',
       'Gladis Christina Jaya (8925263529)',
     ],
+    link: 'https://forms.gle/A9kyL7eCq8e8DYYK6',
   },
   {
     title: 'Paper Presentation',
@@ -47,6 +49,7 @@ const TechnicalEvents = [
     location: 'Rajam Hall, MIT',
     time: 'Paper Submission by 15th March',
     organizer: ['Sree Marthini (7395882087)', 'Logeswari (6374901837)'],
+    link: 'https://forms.gle/EptgZ5yh8NFA6Ejb6',
   },
   {
     title: 'Poster Presentation',
@@ -59,6 +62,7 @@ const TechnicalEvents = [
     location: 'RPT Dept., MIT',
     time: '16th March',
     organizer: ['Salai Siva (9080508420)', 'Suriya Pandian (6374918991)'],
+    link: 'https://forms.gle/rsiA3CbaYo6fQAR56',
   },
   {
     title: 'Idea Presentation',
@@ -71,6 +75,7 @@ const TechnicalEvents = [
     location: 'RPT Dept - 101, MIT',
     time: '1:30PM - 16th March',
     organizer: ['Gnaneshwaran (6379456512)', 'Anzio Ebin (9444372907)'],
+    link: 'https://forms.gle/1p25QhUzYkXsdtcS7',
   },
   {
     title: 'Technical Debate',
@@ -83,6 +88,7 @@ const TechnicalEvents = [
     location: 'Conference Hall, RPT Dept., MIT',
     time: '16th March',
     organizer: ['Vishnu Gopal (9677554529)', 'Angeline (7395946079)'],
+    link: 'https://docs.google.com/forms/d/121Vg0ESFW_wjbdQ2rmKogG433e_Mvc6IYi6EiIjYr-w/viewform?edit_requested=true',
   },
   {
     title: 'Technical Quiz',
@@ -95,6 +101,7 @@ const TechnicalEvents = [
     location: 'RPT Dept - 001, MIT',
     time: '2:30 to 3:00PM - 16th March',
     organizer: ['Gokul (6379100861)', 'Sivanesh (6369683288)'],
+    link: 'https://docs.google.com/forms/d/1BSMNqqJ2oJtfeibVlgwIe6XKCHSllpU8gGP9nAqHiok/edit?usp=drivesdk',
   },
   {
     title: 'Product decoding',
@@ -107,6 +114,7 @@ const TechnicalEvents = [
     location: 'Polymer Chemistry Lab, RPT Dept., MIT',
     time: '3:00 to 3:30PM - 16th March',
     organizer: ['Divyadharshini (7305413582)', 'Naresh (6380213936)'],
+    link: 'https://docs.google.com/forms/d/e/1FAIpQLSe9cPXXeUCWBXXwNQh9Q8qPRCzhdRwnYUdNA1Ebp7jyiq2WRg/viewform?vc=0&c=0&w=1&flr=0',
   },
   {
     title: 'Just a minute',
@@ -134,6 +142,7 @@ const NonTechnicalEvents = [
     location: 'online',
     time: '10th March',
     organizer: ['Gowthami (9080480192)', 'Sharini (9080539055)'],
+    link: 'https://forms.gle/psbB63JZxVx7Ysbw8',
   },
   {
     title: 'Photography',
@@ -198,6 +207,7 @@ const Event = () => {
             recommended={item.recommended}
             image={item.image}
             price={item.price}
+            link={item.link}
             modalOpen={() => modalOpen(i, 'technical')}
           />
         ))}
@@ -213,6 +223,7 @@ const Event = () => {
             recommended={item.recommended}
             image={item.image}
             price={item.price}
+            link={item.link}
             modalOpen={() => modalOpen(i, 'non-technical')}
           />
         ))}
