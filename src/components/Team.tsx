@@ -127,7 +127,7 @@ export function Team() {
         Meet our Cool Team
       </p>
       <div className='mb-2 mt-8 flex w-full flex-col items-center justify-center gap-4 md:flex-row'>
-        <div className='flex max-sm:ml-4 max-sm:mr-8'>
+        <div className='flex max-sm:ml-4 max-sm:mr-8 md:-mr-4'>
           <AnimatedTooltip items={firstHalf} />
         </div>
         <div className='flex max-sm:ml-4 max-sm:mr-8'>
