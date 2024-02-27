@@ -68,7 +68,7 @@ const Footer = () => {
             </svg>
           </a>
           <a
-            href='https://www.linkedin.com/in/spart-mit'
+            href='https://www.instagram.com/spart.mitindia'
             target='_blank'
             className='text-base text-gray-400 transition-all hover:text-white'
           >
