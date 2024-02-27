@@ -3,7 +3,7 @@ import ContactForm from './ContactForm';
 
 export const ContactUs = () => {
   return (
-    <div className='relative grid items-center gap-16 overflow-hidden rounded-3xl border-white/[0.2] bg-gray-800/10 p-10 shadow-[0_2px_10px_-3px_rgba(6,81,237,0.3)] before:absolute before:left-0 before:h-full before:w-[300px] before:bg-blue-800/80 max-md:before:hidden max-sm:pt-0 md:mx-6 md:mb-6 md:grid-cols-2 md:border lg:mx-10 xl:mx-auto xl:max-w-7xl'>
+    <div className='relative grid items-center gap-16 overflow-hidden rounded-3xl border-white/[0.2] bg-gray-800/10 p-10 shadow-[0_2px_10px_-3px_rgba(6,81,237,0.3)] before:absolute before:left-0 before:h-full before:w-[300px] before:bg-blue-600 max-md:before:hidden max-sm:pt-0 md:mx-6 md:mb-6 md:grid-cols-2 md:border lg:mx-10 xl:mx-auto xl:max-w-7xl'>
       <div className='relative z-10 h-full max-md:order-1 max-md:min-h-[350px]'>
         <Suspense fallback={<div>Loading Map...</div>}>
           <iframe
