@@ -62,7 +62,7 @@ const Sponsors = () => {
           <g transform='translate(-11.808919,139.04121)' id='layer1'>
             <g
               transform='matrix(1.25,0,0,-1.25,-498.19608,406.80244)'
-              clip-path='url(#clipPath2871)'
+              clipPath='url(#clipPath2871)'
               id='g2869'
             >
               <g
