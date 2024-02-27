@@ -90,17 +90,23 @@ const people = [
   {
     id: 14,
     name: 'Gnaneshwaran',
-    designation: 'IRI Coordinator ',
+    designation: 'IRI Coordinator',
     image: '/Team/gnanesh.jpeg',
   },
   {
     id: 15,
     name: 'Angeline',
-    designation: 'IRI Coordinator ',
+    designation: 'IPI Coordinator',
     image: '/Team/angeline.jpg',
   },
   {
     id: 16,
+    name: 'Krithika',
+    designation: 'Senior librarian',
+    image: '/Team/krithika.NEF',
+  },
+  {
+    id: 17,
     name: 'Naresh',
     designation: 'Library Incharge',
     image: '/Team/naresh.jpeg',
