@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
 import localFont from 'next/font/local';
+import { Analytics } from '@vercel/analytics/react';
 import './globals.css';
 
 const inter = Inter({ subsets: ['latin'] });
@@ -25,6 +26,7 @@ export default function RootLayout({
     <html lang='en' className={`${HackedKerx.variable}`}>
       <body className={inter.className} suppressHydrationWarning={true}>
         {children}
+        <Analytics />
       </body>
     </html>
   );
