@@ -114,6 +114,10 @@ const people = [
 ];
 
 export function Team() {
+  const midIndex = Math.ceil(people.length / 2);
+  const firstHalf = people.slice(0, midIndex);
+  const secondHalf = people.slice(midIndex);
+
   return (
     <WavyBackground
       backgroundFill='rgb(15 23 42)'
@@ -122,10 +126,15 @@ export function Team() {
       <p className='inter-var text-center text-3xl font-bold text-white md:text-4xl lg:text-7xl'>
         Meet our Cool Team
       </p>
-      <div className='mb-2 mt-8 flex w-full flex-row items-center justify-center'>
-        <AnimatedTooltip items={people} />
+      <div className='mb-2 mt-8 flex w-full flex-col items-center justify-center gap-4 md:flex-row'>
+        <div className='flex max-sm:ml-4 max-sm:mr-8'>
+          <AnimatedTooltip items={firstHalf} />
+        </div>
+        <div className='flex max-sm:ml-4 max-sm:mr-8'>
+          <AnimatedTooltip items={secondHalf} />
+        </div>
       </div>
-      <p className='inter-var text-center text-lg font-semibold text-white md:text-lg'>
+      <p className='inter-var mt-4 text-center text-lg font-semibold text-white md:text-lg'>
         SPARTAN &apos;24
       </p>
     </WavyBackground>
