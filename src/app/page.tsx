@@ -3,6 +3,7 @@ import Event from '@/components/Event';
 import Footer from '@/components/Footer';
 import { HeroSection } from '@/components/HeroSection';
 import { InfoSection } from '@/components/InfoSection';
+import Sponsors from '@/components/Sponsors';
 import { Team } from '@/components/Team';
 
 export default function Home() {
@@ -11,6 +12,7 @@ export default function Home() {
       <HeroSection />
       <InfoSection />
       <Event />
+      <Sponsors />
       <Team />
       <ContactUs />
       <Footer />
