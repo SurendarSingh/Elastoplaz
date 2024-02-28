@@ -71,10 +71,10 @@ const PopupModal = ({ open, modalClose, eventData }: any) => {
                     priority
                     width={600}
                     height={300}
-                    className='w-full rounded-lg md:w-1/2'
+                    className='h-full w-full rounded-lg md:w-1/2'
                   />
                 </Suspense>
-                <div className='h-full w-full'>
+                <div className='h-full w-full md:w-1/2'>
                   <div className='mx-auto grid max-w-lg gap-4'>
                     <div className='flex w-full rounded-md bg-white p-4 shadow-md'>
                       <svg
@@ -116,7 +116,7 @@ const PopupModal = ({ open, modalClose, eventData }: any) => {
                         <h3 className='mb-2 text-xl font-semibold'>
                           {eventData.type}
                         </h3>
-                        <p className='text-lg text-gray-500'>
+                        <p className='text-lg text-gray-700'>
                           Fee: ₹{eventData.price}
                         </p>
                       </div>
@@ -148,7 +148,7 @@ const PopupModal = ({ open, modalClose, eventData }: any) => {
                           Price Pool
                         </h3>
                         {eventData.prize ? (
-                          <ul className='text-lg text-gray-500'>
+                          <ul className='text-lg text-gray-700'>
                             {eventData.prize.map(
                               (prize: string, index: number) => (
                                 <li key={index}>{prize}</li>
@@ -156,7 +156,7 @@ const PopupModal = ({ open, modalClose, eventData }: any) => {
                             )}
                           </ul>
                         ) : (
-                          <p className='text-sm text-gray-500'>Not Available</p>
+                          <p className='text-sm text-gray-700'>Not Available</p>
                         )}
                       </div>
                     </div>
@@ -180,7 +180,7 @@ const PopupModal = ({ open, modalClose, eventData }: any) => {
                         <h3 className='mb-2 text-lg font-semibold'>
                           {eventData.time}
                         </h3>
-                        <p className='text-lg text-gray-500'>
+                        <p className='text-lg text-gray-700'>
                           {eventData.location}
                         </p>
                       </div>
@@ -204,13 +204,67 @@ const PopupModal = ({ open, modalClose, eventData }: any) => {
                         {eventData.organizer ? (
                           eventData.organizer.map(
                             (organizer: string, index: number) => (
-                              <p key={index} className='text-lg text-gray-500'>
+                              <p key={index} className='text-lg text-gray-700'>
                                 {organizer}
                               </p>
                             )
                           )
                         ) : (
-                          <p className='text-sm text-gray-500'>Not Available</p>
+                          <p className='text-sm text-gray-700'>Not Available</p>
+                        )}
+                      </div>
+                    </div>
+                    <div className='flex flex-col rounded-md bg-white p-4 shadow-md'>
+                      <div className='flex items-center'>
+                        <svg
+                          width='800px'
+                          height='800px'
+                          viewBox='0 0 24 24'
+                          version='1.1'
+                          xmlns='http://www.w3.org/2000/svg'
+                          className='mr-6 h-12 w-12 shrink-0 rounded-md bg-gray-100 p-3'
+                        >
+                          <title>ic_fluent_text_description_24_filled</title>
+                          <desc>Created with Sketch.</desc>
+                          <g
+                            id='🔍-System-Icons'
+                            stroke='none'
+                            strokeWidth='1'
+                            fill='none'
+                            fillRule='evenodd'
+                          >
+                            <g
+                              id='ic_fluent_text_description_24_filled'
+                              fill='#212121'
+                              fillRule='nonzero'
+                            >
+                              <path
+                                d='M3,17 L15,17 C15.5522847,17 16,17.4477153 16,18 C16,18.5128358 15.6139598,18.9355072 15.1166211,18.9932723 L15,19 L3,19 C2.44771525,19 2,18.5522847 2,18 C2,17.4871642 2.38604019,17.0644928 2.88337887,17.0067277 L3,17 L15,17 L3,17 Z M3,13 L21,13 C21.5522847,13 22,13.4477153 22,14 C22,14.5128358 21.6139598,14.9355072 21.1166211,14.9932723 L21,15 L3,15 C2.44771525,15 2,14.5522847 2,14 C2,13.4871642 2.38604019,13.0644928 2.88337887,13.0067277 L3,13 L21,13 L3,13 Z M3,9 L21,9 C21.5522847,9 22,9.44771525 22,10 C22,10.5128358 21.6139598,10.9355072 21.1166211,10.9932723 L21,11 L3,11 C2.44771525,11 2,10.5522847 2,10 C2,9.48716416 2.38604019,9.06449284 2.88337887,9.00672773 L3,9 L21,9 L3,9 Z M3,5 L21,5 C21.5522847,5 22,5.44771525 22,6 C22,6.51283584 21.6139598,6.93550716 21.1166211,6.99327227 L21,7 L3,7 C2.44771525,7 2,6.55228475 2,6 C2,5.48716416 2.38604019,5.06449284 2.88337887,5.00672773 L3,5 L21,5 L3,5 Z'
+                                id='🎨-Color'
+                              ></path>
+                            </g>
+                          </g>
+                        </svg>
+                        <h3 className='mb-2 text-xl font-semibold'>
+                          Description
+                        </h3>
+                      </div>
+                      <div>
+                        {eventData.description ? (
+                          eventData.description.map(
+                            (desc: string, idx: number) => (
+                              <p
+                                key={idx}
+                                className='my-3 text-lg font-medium leading-7 text-gray-700'
+                              >
+                                {desc}
+                              </p>
+                            )
+                          )
+                        ) : (
+                          <p className='my-3 text-lg font-medium leading-7 text-gray-700'>
+                            All the best for the event!
+                          </p>
                         )}
                       </div>
                     </div>
