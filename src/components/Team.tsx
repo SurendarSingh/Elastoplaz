@@ -134,9 +134,6 @@ export function Team() {
           <AnimatedTooltip items={secondHalf} />
         </div>
       </div>
-      <p className='inter-var mt-4 text-center text-lg font-semibold text-white md:text-lg'>
-        SPARTAN &apos;24
-      </p>
     </WavyBackground>
   );
 }
