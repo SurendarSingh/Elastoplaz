@@ -30,6 +30,7 @@ export const BentoGridItem = ({
   image,
   modalOpen,
   link,
+  hashtag,
 }: {
   className?: string;
   title: string;
@@ -40,6 +41,7 @@ export const BentoGridItem = ({
   price?: string;
   modalOpen: any;
   link: string;
+  hashtag: string[];
 }) => {
   return (
     <div className='relative'>
@@ -88,6 +90,17 @@ export const BentoGridItem = ({
           {description}
         </div> */}
 
+        <div className='transition duration-200 group-hover/bento:translate-x-2'>
+          {hashtag.map((tag, i) => (
+            <span
+              key={i}
+              className='mb-2 mr-2 inline-block rounded-full bg-slate-100 px-3 py-0.5 text-sm font-semibold text-gray-700'
+            >
+              {tag}
+            </span>
+          ))}
+        </div>
+
         <div className='flex justify-between'>
           <button
             className='group relative inline-block cursor-pointer rounded-full bg-slate-800 p-px text-xs font-semibold leading-6 text-white no-underline shadow-2xl shadow-zinc-900 transition duration-200 group-hover/bento:translate-x-2'
@@ -100,21 +113,6 @@ export const BentoGridItem = ({
             </span>
             <div className='relative z-10 flex items-center space-x-2 rounded-full bg-zinc-950/10 px-4 py-2 ring-1 ring-white/10 '>
               <span className='text-sm'>{`Register Now`}</span>
-              {/* <svg
-                width='16'
-                height='16'
-                viewBox='0 0 24 24'
-                fill='none'
-                xmlns='http://www.w3.org/2000/svg'
-              >
-                <path
-                  stroke='currentColor'
-                  strokeLinecap='round'
-                  strokeLinejoin='round'
-                  strokeWidth='1.5'
-                  d='M10.75 8.75L14.25 12L10.75 15.25'
-                ></path>
-              </svg> */}
             </div>
             <span className='absolute -bottom-0 left-[1.125rem] h-px w-[calc(100%-2.25rem)] bg-gradient-to-r from-emerald-400/0 via-emerald-400/90 to-emerald-400/0 transition-opacity duration-500 group-hover:opacity-40'></span>
           </button>

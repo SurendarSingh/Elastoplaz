@@ -20,6 +20,7 @@ const TechnicalEvents = [
     location: 'RPT Dept., MIT',
     time: 'Disclosed',
     organizer: ['Selva Nithilan (8939001281)', 'Subashini (6379157899)'],
+    hashtag: ['#Solo', '#Workshop'],
     link: 'https://forms.gle/xinL6XcB8kqiiLR29',
   },
   {
@@ -36,6 +37,7 @@ const TechnicalEvents = [
       'Ahilandeswari (6374964674)',
       'Gladis Christina Jaya (8925263529)',
     ],
+    hashtag: ['#Team', '#Hackathon'],
     link: 'https://forms.gle/A9kyL7eCq8e8DYYK6',
   },
   {
@@ -49,6 +51,7 @@ const TechnicalEvents = [
     location: 'Rajam Hall, MIT',
     time: 'Paper Submission by 15th March',
     organizer: ['Sree Marthini (7395882087)', 'Logeswari (6374901837)'],
+    hashtag: ['#Team'],
     link: 'https://forms.gle/EptgZ5yh8NFA6Ejb6',
   },
   {
@@ -62,6 +65,7 @@ const TechnicalEvents = [
     location: 'RPT Dept., MIT',
     time: '16th March',
     organizer: ['Salai Siva (9080508420)', 'Suriya Pandian (6374918991)'],
+    hashtag: ['#Team'],
     link: 'https://forms.gle/rsiA3CbaYo6fQAR56',
   },
   {
@@ -75,6 +79,7 @@ const TechnicalEvents = [
     location: 'RPT Dept - 101, MIT',
     time: '1:30PM - 16th March',
     organizer: ['Gnaneshwaran (6379456512)', 'Anzio Ebin (9444372907)'],
+    hashtag: ['#Team'],
     link: 'https://forms.gle/1p25QhUzYkXsdtcS7',
   },
   {
@@ -88,6 +93,7 @@ const TechnicalEvents = [
     location: 'Conference Hall, RPT Dept., MIT',
     time: '16th March',
     organizer: ['Vishnu Gopal (9677554529)', 'Angeline (7395946079)'],
+    hashtag: ['#Solo'],
     link: 'https://docs.google.com/forms/d/121Vg0ESFW_wjbdQ2rmKogG433e_Mvc6IYi6EiIjYr-w/viewform?edit_requested=true',
   },
   {
@@ -101,6 +107,7 @@ const TechnicalEvents = [
     location: 'RPT Dept - 001, MIT',
     time: '2:30 to 3:00PM - 16th March',
     organizer: ['Gokul (6379100861)', 'Sivanesh (6369683288)'],
+    hashtag: ['#Solo'],
     link: 'https://docs.google.com/forms/d/1BSMNqqJ2oJtfeibVlgwIe6XKCHSllpU8gGP9nAqHiok/edit?usp=drivesdk',
   },
   {
@@ -114,6 +121,7 @@ const TechnicalEvents = [
     location: 'Polymer Chemistry Lab, RPT Dept., MIT',
     time: '3:00 to 3:30PM - 16th March',
     organizer: ['Divyadharshini (7305413582)', 'Naresh (6380213936)'],
+    hashtag: ['#Team'],
     link: 'https://docs.google.com/forms/d/e/1FAIpQLSe9cPXXeUCWBXXwNQh9Q8qPRCzhdRwnYUdNA1Ebp7jyiq2WRg/viewform?vc=0&c=0&w=1&flr=0',
   },
   {
@@ -127,6 +135,7 @@ const TechnicalEvents = [
     location: 'RPT Dept - 301, MIT',
     time: '16th March',
     organizer: ['Sangeetha (6383952970)', 'Santhosh Sakthi (7299450950)'],
+    hashtag: ['#Solo'],
   },
 ];
 
@@ -142,6 +151,7 @@ const NonTechnicalEvents = [
     location: 'Online',
     time: '10th March',
     organizer: ['Gowthami (9080480192)', 'Sharini (9080539055)'],
+    hashtag: ['#Solo'],
     link: 'https://forms.gle/psbB63JZxVx7Ysbw8',
   },
   {
@@ -155,6 +165,7 @@ const NonTechnicalEvents = [
     location: 'Online',
     time: '12th March',
     organizer: ['Krithika (9445102447)'],
+    hashtag: ['#Solo'],
   },
   {
     title: 'Reels/Short film',
@@ -167,6 +178,7 @@ const NonTechnicalEvents = [
     location: 'Online',
     time: 'Disclosed',
     organizer: ['Disclosed'],
+    hashtag: ['#Solo'],
   },
 ];
 
@@ -208,6 +220,7 @@ const Event = () => {
             image={item.image}
             price={item.price}
             link={item.link}
+            hashtag={item.hashtag}
             modalOpen={() => modalOpen(i, 'technical')}
           />
         ))}
@@ -224,6 +237,7 @@ const Event = () => {
             image={item.image}
             price={item.price}
             link={item.link}
+            hashtag={item.hashtag}
             modalOpen={() => modalOpen(i, 'non-technical')}
           />
         ))}
