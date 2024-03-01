@@ -23,7 +23,7 @@ export const ContactUs = () => {
           you.
         </p>
         <ContactForm />
-        <ul className='mt-6 flex justify-center text-gray-200 max-lg:flex-col max-lg:items-center max-lg:space-y-2 lg:space-x-6 '>
+        <ul className='mt-6 flex justify-center text-gray-200 max-lg:flex-col max-lg:items-center max-lg:space-y-2 lg:space-x-6'>
           <li className='flex items-center hover:text-blue-500'>
             <svg
               xmlns='http://www.w3.org/2000/svg'
@@ -38,7 +38,7 @@ export const ContactUs = () => {
               />
             </svg>
             <a className='ml-3 text-sm text-current'>
-              <strong>spart@mitindia.com</strong>
+              <strong>spart2024.mit@gmail.com</strong>
             </a>
           </li>
           <li className='flex items-center text-current hover:text-blue-500'>
@@ -55,31 +55,31 @@ export const ContactUs = () => {
               ></path>
             </svg>
             <a className='ml-3 text-sm text-current'>
-              <strong>+91 96775 54529</strong>
-            </a>
-          </li>
-          <li className='flex items-center text-current hover:text-blue-500'>
-            <svg
-              xmlns='http://www.w3.org/2000/svg'
-              width='16px'
-              height='16px'
-              fill='currentColor'
-              viewBox='0 0 395.71 395.71'
-            >
-              <g>
-                <path
-                  d='M197.849,0C122.131,0,60.531,61.609,60.531,137.329c0,72.887,124.591,243.177,129.896,250.388l4.951,6.738
-		c0.579,0.792,1.501,1.255,2.471,1.255c0.985,0,1.901-0.463,2.486-1.255l4.948-6.738c5.308-7.211,129.896-177.501,129.896-250.388
-		C335.179,61.609,273.569,0,197.849,0z M197.849,88.138c27.13,0,49.191,22.062,49.191,49.191c0,27.115-22.062,49.191-49.191,49.191
-		c-27.114,0-49.191-22.076-49.191-49.191C148.658,110.2,170.734,88.138,197.849,88.138z'
-                />
-              </g>
-            </svg>
-            <a className='ml-3 text-sm text-current'>
-              <strong>RPT. MIT. Chrompet</strong>
+              <strong>+91 63696 83288</strong>
             </a>
           </li>
         </ul>
+        <span className='mt-2 flex items-center justify-center text-gray-200 hover:text-blue-500'>
+          <svg
+            xmlns='http://www.w3.org/2000/svg'
+            width='16px'
+            height='16px'
+            fill='currentColor'
+            viewBox='0 0 395.71 395.71'
+          >
+            <g>
+              <path
+                d='M197.849,0C122.131,0,60.531,61.609,60.531,137.329c0,72.887,124.591,243.177,129.896,250.388l4.951,6.738
+		c0.579,0.792,1.501,1.255,2.471,1.255c0.985,0,1.901-0.463,2.486-1.255l4.948-6.738c5.308-7.211,129.896-177.501,129.896-250.388
+		C335.179,61.609,273.569,0,197.849,0z M197.849,88.138c27.13,0,49.191,22.062,49.191,49.191c0,27.115-22.062,49.191-49.191,49.191
+		c-27.114,0-49.191-22.076-49.191-49.191C148.658,110.2,170.734,88.138,197.849,88.138z'
+              />
+            </g>
+          </svg>
+          <a className='ml-3 text-sm text-current'>
+            <strong>RPT, MIT Campus, Chrompet</strong>
+          </a>
+        </span>
       </div>
     </div>
   );
