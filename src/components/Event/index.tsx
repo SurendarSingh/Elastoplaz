@@ -181,6 +181,7 @@ const TechnicalEvents = [
     time: '16th March',
     organizer: ['Sangeetha (6383952970)', 'Santhosh Sakthi (7299450950)'],
     hashtag: ['#Solo'],
+    link: 'https://docs.google.com/forms/d/e/1FAIpQLSd7JaDULNAO_aTz_9KxsvygisPVs3tM3hZXuueWYtZP2ofc-Q/viewform',
   },
 ];
 
@@ -211,6 +212,7 @@ const NonTechnicalEvents = [
     time: '12th March',
     organizer: ['Krithika (9445102447)'],
     hashtag: ['#Solo'],
+    link: 'https://forms.gle/BVsjYc4WoNMe4N2v9',
   },
   {
     title: 'Reels/Short film',
