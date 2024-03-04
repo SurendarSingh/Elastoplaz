@@ -11,7 +11,7 @@ import PopupModal from './PopupModal';
 const TechnicalEvents = [
   {
     title: 'Workshop',
-    image: '/ep-logo.png',
+    image: '/ep-logo-24.png',
     price: '300',
     open: true,
     recommended: true,
@@ -226,7 +226,7 @@ const NonTechnicalEvents = [
   },
   {
     title: 'Reels/Short film',
-    image: '/ep-logo.png',
+    image: '/ep-logo-24.png',
     price: 'Free',
     open: true,
     recommended: true,

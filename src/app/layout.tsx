@@ -14,8 +14,10 @@ const HackedKerx = localFont({
 });
 
 export const metadata: Metadata = {
-  title: 'Elastoplaz 24',
-  description: 'National Level Technical Symposium',
+  title: 'Elastoplaz 2024',
+  description:
+    'National Level Technical Symposium by Department of Rubber & Plastics Technology at MIT campus, Anna University, Chennai - 600044',
+  icons: '/icon.png',
 };
 
 export default function RootLayout({
