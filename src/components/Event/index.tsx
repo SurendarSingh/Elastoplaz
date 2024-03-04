@@ -33,6 +33,7 @@ const TechnicalEvents = [
     open: true,
     recommended: true,
     prize: ['Winner: ₹7,000', 'Runner: ₹3,000'],
+    win: '₹10,000+',
     type: 'Team Registration (Max. 3)',
     location: 'GJ Park, MIT',
     time: '15th March',
@@ -58,6 +59,7 @@ const TechnicalEvents = [
     open: true,
     recommended: true,
     prize: ['Winner: ₹10,000', 'Runner: ₹5,000'],
+    win: '₹15,000+',
     type: 'Team Registration (Max. 3)',
     location: 'Rajam Hall, MIT',
     time: 'Paper Submission by 15th March',
@@ -78,6 +80,7 @@ const TechnicalEvents = [
     open: true,
     recommended: false,
     prize: ['Winner: ₹3,000', 'Runner: ₹1,500'],
+    win: '₹4,500+',
     type: 'Team Registration (Max. 3)',
     location: 'M. Tech Classroom, 2nd floor, RPT Dept., MIT',
     time: '1:30PM to 2:30PM - 16th March',
@@ -103,6 +106,7 @@ const TechnicalEvents = [
     open: true,
     recommended: false,
     prize: ['Winner: ₹3,000', 'Runner: ₹1,500'],
+    win: '₹4,500+',
     type: 'Team Registration (Max. 3)',
     location: 'RPT 101 Ground Floor Classroom, MIT',
     time: '1:30PM to 2:30PM - 16th March',
@@ -123,6 +127,7 @@ const TechnicalEvents = [
     open: true,
     recommended: true,
     prize: ['Winner: ₹3,000', 'Runner: ₹1,500'],
+    win: '₹4,500+',
     type: 'Solo Registration',
     location: 'Conference Hall, RPT Dept., MIT',
     time: '16th March',
@@ -141,6 +146,7 @@ const TechnicalEvents = [
     open: true,
     recommended: true,
     prize: ['Winner: ₹1,500', 'Runner: ₹750'],
+    win: '₹2,000+',
     type: 'Solo Registration',
     location: 'RPT Dept - 001, MIT',
     time: '2:30 to 3:00PM - 16th March',
@@ -158,6 +164,7 @@ const TechnicalEvents = [
     open: true,
     recommended: false,
     prize: ['Winner: ₹1,500', 'Runner: ₹750'],
+    win: '₹2,000+',
     type: 'Team Registration (Max. 2)',
     location: 'Polymer Chemistry Lab, RPT Dept., MIT',
     time: '3:00 to 3:30PM - 16th March',
@@ -176,6 +183,7 @@ const TechnicalEvents = [
     open: true,
     recommended: false,
     prize: ['Winner: ₹1,500', 'Runner: ₹750'],
+    win: '₹2,000+',
     type: 'Solo Registration',
     location: 'RPT Dept - 301, MIT',
     time: '16th March',
@@ -193,6 +201,7 @@ const NonTechnicalEvents = [
     open: true,
     recommended: true,
     prize: ['Winner: ₹500'],
+    win: '₹500',
     type: 'Solo Registration',
     location: 'Online',
     time: '6th March',
@@ -207,6 +216,7 @@ const NonTechnicalEvents = [
     open: true,
     recommended: true,
     prize: ['Winner: ₹500'],
+    win: '₹500',
     type: 'Solo Registration',
     location: 'Online',
     time: '12th March',
@@ -221,6 +231,7 @@ const NonTechnicalEvents = [
     open: true,
     recommended: true,
     prize: ['Winner: ₹500'],
+    win: '₹500',
     type: 'Solo Registration',
     location: 'Online',
     time: 'Disclosed',
@@ -256,7 +267,7 @@ const Event = () => {
         eventData={eventData}
       />
       <GridBackground />
-      <BentoGrid className='mx-auto px-10 pb-2 lg:max-w-7xl'>
+      <BentoGrid className='mx-auto px-6 pb-2 lg:max-w-7xl'>
         {TechnicalEvents.map((item: any, i: number) => (
           <BentoGridItem
             key={i}
@@ -265,7 +276,7 @@ const Event = () => {
             open={item.open}
             recommended={item.recommended}
             image={item.image}
-            price={item.price}
+            win={item.win}
             link={item.link}
             hashtag={item.hashtag}
             modalOpen={() => modalOpen(i, 'technical')}
@@ -282,7 +293,7 @@ const Event = () => {
             open={item.open}
             recommended={item.recommended}
             image={item.image}
-            price={item.price}
+            win={item.win}
             link={item.link}
             hashtag={item.hashtag}
             modalOpen={() => modalOpen(i, 'non-technical')}

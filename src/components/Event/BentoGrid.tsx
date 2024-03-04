@@ -1,5 +1,6 @@
 import { cn } from '@/utils/cn';
 import Image from 'next/image';
+import Trophy from '@/../public/assert/trophy.svg';
 
 export const BentoGrid = ({
   className,
@@ -11,7 +12,7 @@ export const BentoGrid = ({
   return (
     <div
       className={cn(
-        'mx-auto grid max-w-7xl auto-rows-[18rem] grid-cols-1 gap-4 md:auto-rows-[24rem] md:grid-cols-3 ',
+        'mx-auto grid max-w-7xl auto-rows-auto grid-cols-1 gap-4 md:grid-cols-3 ',
         className
       )}
     >
@@ -26,7 +27,7 @@ export const BentoGridItem = ({
   // description,
   open = false,
   recommended = false,
-  price,
+  win,
   image,
   modalOpen,
   link,
@@ -38,7 +39,7 @@ export const BentoGridItem = ({
   open?: boolean;
   image: string;
   recommended?: boolean;
-  price?: string;
+  win?: string;
   modalOpen: any;
   link: string;
   hashtag: string[];
@@ -62,7 +63,7 @@ export const BentoGridItem = ({
         )}
       >
         <div className='relative h-full min-h-[6rem] transition duration-200 group-hover/bento:translate-x-2'>
-          <div className='relative flex h-full w-full overflow-hidden rounded-xl'>
+          <div className='relative flex h-60 w-full overflow-hidden rounded-xl'>
             <Image
               src={image}
               fill
@@ -81,9 +82,12 @@ export const BentoGridItem = ({
         </div>
         <div className='mb-2 mt-2 flex justify-between transition duration-200 group-hover/bento:translate-x-2'>
           <span className='text-lg font-bold text-neutral-200'>{title}</span>
-          <span className='flex items-center rounded-full bg-white px-3 py-2 text-sm font-bold leading-none text-purple-500'>
-            ₹ {price}
-          </span>
+          {win && (
+            <span className='flex flex-wrap items-center justify-center gap-1 rounded-full bg-white px-3 py-2 text-sm font-bold leading-none text-purple-500'>
+              <Image src={Trophy} alt='trophy' className='h-5 w-5' />
+              {win}
+            </span>
+          )}
         </div>
 
         {/* <div className='text-xs font-normal text-neutral-300 transition duration-200 group-hover/bento:translate-x-2'>
