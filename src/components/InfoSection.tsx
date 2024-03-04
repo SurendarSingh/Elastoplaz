@@ -23,7 +23,7 @@ export function InfoSection() {
       {content.map((item, index) => (
         <div
           key={index}
-          className='container mx-auto flex flex-col items-center py-8 max-sm:px-5 md:flex-row md:py-16'
+          className='container mx-auto flex flex-col items-center justify-center py-8 max-sm:px-5 md:flex-row md:py-16'
         >
           <div
             className={`${index % 2 == 0 && 'md:order-1'} flex w-5/6 flex-col items-center text-center md:w-1/2 md:items-start md:px-16 md:text-left lg:flex-grow lg:px-24`}
