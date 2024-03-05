@@ -196,7 +196,7 @@ const TechnicalEvents = [
 const NonTechnicalEvents = [
   {
     title: 'Connexions',
-    image: '/Events/connexion.jpg',
+    image: '/Events/connexion.jpeg',
     price: 'Free',
     open: true,
     recommended: true,
