@@ -18,6 +18,21 @@ export const metadata: Metadata = {
   description:
     'National Level Technical Symposium by Department of Rubber & Plastics Technology at MIT campus, Anna University, Chennai - 600044',
   icons: '/icon.png',
+  metadataBase: new URL('http://localhost:3000'),
+  openGraph: {
+    images: [
+      {
+        url: '/opengraph-image.jpg',
+      },
+    ],
+  },
+  twitter: {
+    images: [
+      {
+        url: './twitter-image.jpg',
+      },
+    ],
+  },
 };
 
 export default function RootLayout({
