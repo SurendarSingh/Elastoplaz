@@ -62,8 +62,8 @@ export const BentoGridItem = ({
           className
         )}
       >
-        <div className='relative h-full min-h-[6rem] transition duration-200 group-hover/bento:translate-x-2'>
-          <div className='relative flex h-60 w-full overflow-hidden rounded-xl'>
+        <div className='relative h-64 transition duration-200 group-hover/bento:translate-x-2'>
+          <div className='relative flex h-full w-full overflow-hidden rounded-xl'>
             <Image
               src={image}
               fill
