@@ -187,7 +187,7 @@ const TechnicalEvents = [
   },
   {
     title: 'Just a minute',
-    image: '/Events/just-a-minute.jpeg',
+    image: '/Events/just-a-minute.jpg',
     price: '150',
     open: true,
     recommended: false,
@@ -206,7 +206,7 @@ const TechnicalEvents = [
 const NonTechnicalEvents = [
   {
     title: 'Connexions',
-    image: '/Events/connexion.jpeg',
+    image: '/Events/connexion.jpg',
     price: 'Free',
     open: true,
     recommended: true,
@@ -222,7 +222,7 @@ const NonTechnicalEvents = [
   },
   {
     title: 'Polypix',
-    image: '/Events/photo-contest.jpeg',
+    image: '/Events/photo-contest.jpg',
     price: 'Free',
     open: true,
     recommended: true,
@@ -238,7 +238,7 @@ const NonTechnicalEvents = [
   },
   {
     title: 'Reels/Short film',
-    image: '/ep-logo-24.png',
+    image: '/Events/reel-contest.jpg',
     price: 'Free',
     open: true,
     recommended: true,
@@ -247,8 +247,12 @@ const NonTechnicalEvents = [
     win: '₹500',
     type: 'Solo Registration',
     location: 'Online',
-    time: 'Disclosed',
-    organizer: ['Disclosed'],
+    time: 'Before 10th March',
+    organizer: ['6369683288'],
+    description: [
+      'Topic: "Plastics, An Inalieable Part of Our Lives"',
+      'Send your entries to 63696 83288',
+    ],
     hashtag: ['#Solo', '#Reels', '#ShortFilm'],
   },
 ];
